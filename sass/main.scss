@@ -1,0 +1,51 @@
+//Variables
+$color-primary: #2ebd8f;
+$color-black:#000;
+$color-white:#fff;
+$color-grey-dark-1:#333;
+$color-grey-dark-2:#666;
+$color-grey-lighy-1:#eee;
+
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-lighy-1;
+}
+
+.header {
+    height: 70vh;
+    background-image: linear-gradient(to right,rgba($color-grey-dark-1,0.9),rgba($color-grey-dark-2,.9));
+    position: relative;
+
+    &__display-picture-box{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border: #000 1rem solid;
+        border-radius: 16rem;
+    }
+
+    &__display-picture{
+        height: 30rem;
+        width: 30rem;
+        border-radius: 15rem;
+        outline: $color-primary solid 1.5rem;
+        -moz-outline-radius: 2rem;
+        border-image-outset: 1rem;
+    }
+}
